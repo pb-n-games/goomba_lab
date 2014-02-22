@@ -26,7 +26,7 @@ assets: [
   'assets/GGJ13-GoombaLab-SFX-HappyNoise2.ogg',
   'assets/background.png',
   'assets/t_env_bgB.png',
-  'assets/goomba_lab_splash.png'
+  'assets/zeebi_splashA.jpg'
 ],
 
 loadSprites: function() {

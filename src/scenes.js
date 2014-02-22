@@ -73,7 +73,7 @@ Crafty.scene('Final', function(){
 // -------------
 // Show the intro screen
 Crafty.scene('Start', function() {
-  Crafty.e('2D, DOM, Image').image('assets/goomba_lab_splash.png');
+  Crafty.e('2D, DOM, Image').image('assets/zeebi_splashA.jpg');
 
   Helpers.simpleText('Click to start', { x: 450, y: 310, width: 200, css: { color: 'black' } });
 
