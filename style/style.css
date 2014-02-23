@@ -179,6 +179,11 @@ body {
   font-size: 16px;
 }
 
+.editor_cont {
+  visibility: hidden;
+  display: none;
+}
+
 .level_editor_legend {
   list-style: none;
   width: 300px;

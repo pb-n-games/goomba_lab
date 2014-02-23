@@ -69,14 +69,24 @@ loadSprites: function() {
 },
 
 loadAudio: function() {
+  if ($.urlParam('mute')) {
+    return;
+  }
+  
   audioGroup = function(file_name_base) {
     return [
       'assets/' + file_name_base + '.mp3',
       'assets/' + file_name_base + '.ogg'
     ];
   };
+  
+  if (!$.urlParam('mutebgm')) {
+    Crafty.audio.add({
+      background: audioGroup('GGJ13-GoombaLab-BGM')
+    });
+  }
+  
   Crafty.audio.add({
-    background: audioGroup('GGJ13-GoombaLab-BGM'),
     colliding:  audioGroup('GGJ13-GoombaLab-SFX-Colliding'),
     eating:     audioGroup('GGJ13-GoombaLab-SFX-Eating'),
     exit_win:   audioGroup('GGJ13-GoombaLab-SFX-Exit&Win'),
